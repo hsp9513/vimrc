@@ -45,7 +45,7 @@ set wildmenu
 set wildmode=list:longest
 
 if &diff
-    colorscheme diffcolors
+    silent! colorscheme diffcolors
 endif
 "colorscheme jellybeans
 
