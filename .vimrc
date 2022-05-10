@@ -54,7 +54,7 @@ if !exists("g:os")
     if has("win64") || has("win32") || has("win16")
         let g:os = "Windows"
     else
-        let g:os = substitude(system('uname'), '\n', '', '')
+        let g:os = substitute(system('uname'), '\n', '', '')
         "let g:os = "Linux"
     endif
 endif
@@ -292,4 +292,3 @@ nmap gia V/;<CR>k:EasyAlign */[.()]/l0r0<CR><F12>
 "calculation
 "xmap gc "cdi<C-R>=<C-R>c<CR><ESC>
 xmap gc "cygvc<C-R>=<C-R>c<CR><ESC>
-:echo a
