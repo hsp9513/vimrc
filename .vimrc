@@ -58,6 +58,12 @@ if !exists("g:os")
         "let g:os = "Linux"
     endif
 endif
+
+if g:os == "Windows"
+    let g:vimrc = "~/_vimrc"
+else
+    let g:vimrc = "~/.vimrc"
+endif
         
 " ==========================================
 " Tabspace without Makefile
@@ -189,9 +195,12 @@ nmap <C-n> :Vexplore!<CR>=
 xmap <C-n> <ESC>:Vexplore!<CR>=
 
 "OpenVimrc
-nmap vim  :vs<CR>:e ~/.vimrc<CR>
-nmap vish :vs<CR>:e ~/.vimrc<CR>
-nmap sosh :so ~/.vimrc<CR>
+"nmap vim  :vs<CR>:e ~/.vimrc<CR>
+"nmap vish :vs<CR>:e ~/.vimrc<CR>
+"nmap sosh :so ~/.vimrc<CR>
+nmap vim  :vs<CR>:execute "edit" g:vimrc<CR>
+nmap vish vim
+nmap sosh :execute "so" g:vimrc<CR>
 
 "Quit / Save
 nmap <Esc>q :q<CR>
