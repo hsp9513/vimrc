@@ -19,6 +19,8 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'Yggdroot/indentLine'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -309,3 +311,13 @@ nmap gia V/;<CR>k:EasyAlign */[.()]/l0r0<CR><F12>
 "calculation
 "xmap gc "cdi<C-R>=<C-R>c<CR><ESC>
 xmap gc "cygvc<C-R>=<C-R>c<CR><ESC>
+
+"IndentLine
+"let g:indentLine_setColors = 0
+"let g:indentLine_defaultGroup = 'SpecialKey'
+"let g:indentLine_char = 'c'
+"let g:indentLine_char_list = ['|', '|', '?', '?']
+"let g:indentLine_concealcursor = 'inc'
+"let g:indentLine_conceallevel = 2
+"let g:indentLine_setConceal = 0
+
