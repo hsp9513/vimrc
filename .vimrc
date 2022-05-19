@@ -60,6 +60,13 @@ if !exists("g:os")
     endif
 endif
 
+" Alt Mapping for GUI Mode
+if has("gui_running")
+    map <M-c> <Esc>c
+    map <M-w> <Esc>w
+    map <M-q> <Esc>q
+endif
+
 if g:os == "Windows"
     let g:vimrc = "~/_vimrc"
 else
