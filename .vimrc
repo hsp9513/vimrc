@@ -58,7 +58,7 @@ if !exists("g:os")
         let g:os = "Windows"
     else
         let g:os = substitute(system('uname'), '\n', '', '')
-        "let g:os = "Linux"
+                "let g:os = "Linux"
     endif
 endif
 
@@ -313,11 +313,13 @@ nmap gia V/;<CR>k:EasyAlign */[.()]/l0r0<CR><F12>
 xmap gc "cygvc<C-R>=<C-R>c<CR><ESC>
 
 "IndentLine
-"let g:indentLine_setColors = 0
+"let g:indentLine_setColors = 7
+let g:indentLine_color_term = 7
 "let g:indentLine_defaultGroup = 'SpecialKey'
 "let g:indentLine_char = 'c'
 "let g:indentLine_char_list = ['|', '|', '?', '?']
 "let g:indentLine_concealcursor = 'inc'
 "let g:indentLine_conceallevel = 2
 "let g:indentLine_setConceal = 0
+map <F6> :IndentLinesToggle<CR>
 
