@@ -34,7 +34,9 @@ set autoindent
 set cindent
 set smartindent
 set bs=2
-set encoding=utf-8
+"set enc=utf8
+set fileencodings=utf8
+"
 "set tabstop=4
 "set expandtab
 "set shiftwidth=4
