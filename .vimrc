@@ -94,6 +94,8 @@ endif
 "    setfiletype plain
 "endif
 au! filetypedetect BufNewFile,BufRead *.lib
+au filetypedetect BufNewFile,BufRead *.c set filetype=cpp
+au filetypedetect BufNewFile,BufRead *.pc set filetype=cpp
 
 "Quick search(*)
 xmap * <ESC>*
@@ -313,6 +315,10 @@ nmap gia V/;<CR>k:EasyAlign */[.()]/l0r0<CR><F12>
 "calculation
 "xmap gc "cdi<C-R>=<C-R>c<CR><ESC>
 xmap gc "cygvc<C-R>=<C-R>c<CR><ESC>
+
+"diff
+map don :diffthis<CR>
+map dof :diffoff<CR>
 
 "IndentLine
 "let g:indentLine_setColors = 0
