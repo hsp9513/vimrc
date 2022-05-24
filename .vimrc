@@ -66,6 +66,7 @@ endif
 
 " Alt Mapping for GUI Mode
 if has("gui_running")
+    set wak=no
     map <M-c> <Esc>c
     map <M-w> <Esc>w
     map <M-q> <Esc>q
