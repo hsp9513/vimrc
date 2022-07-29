@@ -243,7 +243,8 @@ xmap <Del> "_x
 nmap <backspace> h"_x
 "nmap  h"_x
 nmap <space> i <ESC>l
-"nmap <CR> o<ESC>
+nmap <CR> o<ESC>
+nnoremap g<CR> <CR>
 
 "Turn Off Highlight
 map <F12>    :noh<CR>
