@@ -35,7 +35,7 @@ set cindent
 set smartindent
 set bs=2
 "set enc=utf8
-set fileencodings=utf8
+set fileencoding=utf8
 "
 "set tabstop=4
 "set expandtab
@@ -243,7 +243,7 @@ xmap <Del> "_x
 nmap <backspace> h"_x
 "nmap  h"_x
 nmap <space> i <ESC>l
-nmap <CR> o<ESC>
+"nmap <CR> o<ESC>
 
 "Turn Off Highlight
 map <F12>    :noh<CR>
@@ -277,7 +277,8 @@ imap <C-F10>   <ESC><C-F10>
 nmap <C-S-F10> "+P
 
 "Block visual insert
-xmap C yPgvc
+"xmap C yPgvc
+xmap C I
 
 "declation align
 nmap gd_maketempbus :'<,'>v/\v\[[^:]+:[^:]+\]\|^ *\/\//s/\v(input\|outputreg\|output\|inout\|wire\|reg)/\1 [x:x]<CR>
