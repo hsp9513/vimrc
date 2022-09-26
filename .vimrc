@@ -140,10 +140,10 @@ map  <C-S-Down>   <ESC>10<C-W>+
 "Insert Mode
 imap jk <ESC>
 imap kj <ESC>
-"imap <C-H> <Left>
-"imap <C-J> <Down>
-"imap <C-K> <Up>
-"imap <C-L> <Right>
+imap <C-H> <Left>
+imap <C-J> <Down>
+imap <C-K> <Up>
+imap <C-L> <Right>
 "imap <C-W> <ESC>lwi
 "imap <C-B> <ESC>bi
 "imap <C-E> <ESC>ei
@@ -202,6 +202,7 @@ nmap gw <Plug>(easymotion-overwin-w)
 
 "Open Directory
 "nmap <C-E> :Explore<CR>
+nmap -     :Explore<CR>
 nmap ge    :Explore<CR>
 nmap <C-e> :NERDTreeFind<CR>
 xmap <C-e> <ESC>:NERDTreeFind<CR>
@@ -302,10 +303,10 @@ nmap gia V/;<CR>k:EasyAlign */[.()]/l0r0<CR><F12>
 "\}
 
 "command-line mode
-"cmap <C-H> <Left>
-"cmap <C-J> <Down>
-"cmap <C-K> <Up>
-"cmap <C-L> <Right>
+cmap <C-H> <Left>
+cmap <C-J> <Down>
+cmap <C-K> <Up>
+cmap <C-L> <Right>
 
 
 "command -bar CInstAlign norm Vi(|EasyAlign */,/
