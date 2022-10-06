@@ -35,7 +35,7 @@ set cindent
 set smartindent
 set bs=2
 "set enc=utf8
-set fileencodings=utf8
+set fileencoding=utf8
 "
 "set tabstop=4
 "set expandtab
@@ -140,10 +140,10 @@ map  <C-S-Down>   <ESC>10<C-W>+
 "Insert Mode
 imap jk <ESC>
 imap kj <ESC>
-"imap <C-H> <Left>
-"imap <C-J> <Down>
-"imap <C-K> <Up>
-"imap <C-L> <Right>
+imap <C-H> <Left>
+imap <C-J> <Down>
+imap <C-K> <Up>
+imap <C-L> <Right>
 "imap <C-W> <ESC>lwi
 "imap <C-B> <ESC>bi
 "imap <C-E> <ESC>ei
@@ -202,6 +202,7 @@ nmap gw <Plug>(easymotion-overwin-w)
 
 "Open Directory
 "nmap <C-E> :Explore<CR>
+nmap -     :Explore<CR>
 nmap ge    :Explore<CR>
 nmap <C-e> :NERDTreeFind<CR>
 xmap <C-e> <ESC>:NERDTreeFind<CR>
@@ -244,6 +245,7 @@ nmap <backspace> h"_x
 "nmap  h"_x
 nmap <space> i <ESC>l
 nmap <CR> o<ESC>
+nnoremap g<CR> <CR>
 
 "Turn Off Highlight
 map <F12>    :noh<CR>
@@ -277,7 +279,8 @@ imap <C-F10>   <ESC><C-F10>
 nmap <C-S-F10> "+P
 
 "Block visual insert
-xmap C yPgvc
+"xmap C yPgvc
+xmap C I
 
 "declation align
 nmap gd_maketempbus :'<,'>v/\v\[[^:]+:[^:]+\]\|^ *\/\//s/\v(input\|outputreg\|output\|inout\|wire\|reg)/\1 [x:x]<CR>
@@ -300,10 +303,10 @@ nmap gia V/;<CR>k:EasyAlign */[.()]/l0r0<CR><F12>
 "\}
 
 "command-line mode
-"cmap <C-H> <Left>
-"cmap <C-J> <Down>
-"cmap <C-K> <Up>
-"cmap <C-L> <Right>
+cmap <C-H> <Left>
+cmap <C-J> <Down>
+cmap <C-K> <Up>
+cmap <C-L> <Right>
 
 
 "command -bar CInstAlign norm Vi(|EasyAlign */,/
