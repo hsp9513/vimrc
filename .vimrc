@@ -332,3 +332,9 @@ let g:indentLine_color_term = 7
 let g:indentLine_setConceal = 0
 map <F6> :IndentLinesToggle<CR>
 
+"Cnext, Cprev
+nmap cn :cnext<CR>
+nmap cp :cprev<CR>
+
+"fold
+nmap zO zR
