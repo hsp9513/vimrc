@@ -283,6 +283,7 @@ nmap <C-S-F10> "+P
 xmap C I
 
 "declation align
+map  ga :EasyAlign 
 nmap gd_maketempbus :'<,'>v/\v\[[^:]+:[^:]+\]\|^ *\/\//s/\v(input\|outputreg\|output\|inout\|wire\|reg)/\1 [x:x]<CR>
 xmap gd_maketempbus <ESC>gd_maketempbus
 nmap gd_align :'<,'>EasyAlign * /\v[\[:\];]\|(\/\/)/ v/\v^\/\//l2r1<CR>
