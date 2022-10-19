@@ -172,8 +172,10 @@ map gl $
 noremap gdd md*gd
 map gD `d
 "map gndd :sp<CR>gdd
-map gs :sp<CR>
-map vs :vs<CR>
+nmap gs :sp<CR>
+xmap gs <ESC>gs
+nmap vs :vs<CR>
+xmap vs <ESC>vs
 
 map g; ml:let lastsearch=@/<CR>?;<CR>:let @/=lastsearch<CR>
 map g: `l
