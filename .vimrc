@@ -282,7 +282,7 @@ nmap <C-S-F10> "+P
 
 "Block visual insert
 "xmap C yPgvc
-xmap C I
+xnoremap C I
 
 "declation align
 map  ga :EasyAlign 
