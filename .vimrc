@@ -266,8 +266,10 @@ imap <F3> <ESC>q
 map  <F4> @m
 
 "refresh
-map  <F5>   :e!<CR>
-map  <S-F5> :e!<CR>G
+nmap  <F5>   :e!<CR>
+xmap  <F5>   <ESC>:e!<CR>
+nmap  <S-F5> :e!<CR>G
+xmap  <S-F5> <ESC>:e!<CR>G
 
 "copy & paste
 nmap <F9>      viw<F9>
