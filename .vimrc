@@ -326,6 +326,8 @@ xmap gc "cygvc<C-R>=<C-R>c<CR><ESC>
 "diff
 map don :diffthis<CR>
 map dof :diffoff<CR>
+map doon :windo diffthis<CR>
+map doof :windo diffoff<CR>
 
 "IndentLine
 "let g:indentLine_setColors = 7
