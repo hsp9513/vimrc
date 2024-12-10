@@ -1,3 +1,5 @@
+set langmenu=en_US.UTF-8
+"set langmenu=cp949
 set nocompatible              " be iMproved, required
     filetype off                  " required
 
@@ -34,8 +36,8 @@ set autoindent
 set cindent
 set smartindent
 set bs=2
-"set enc=utf8
-set fileencoding=utf8
+set fileencodings=utf-8
+set encoding=utf-8
 "
 "set tabstop=4
 "set expandtab
